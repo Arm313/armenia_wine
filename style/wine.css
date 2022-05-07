@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x:hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+@keyframes hover{
+    from{
+        background-color: #fff;
+    }
+}
+.div_logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    padding: 20px 0;
+}
+header{
+    width: 100%;
+    height: 40px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    position: relative;
+}
+.nav_item{
+    color: #555555;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+.nav_item:hover{
+    color: #0081cc ;
+}
+.nav_item_blog{
+    position: absolute;
+    right: 60px;
+    height: 100%;
+    width: 60px;
+    color: #555555;
+    background-color:   #b29d7f;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+.nav_item_blog:hover{
+    color: #fff ;
+}
+.bg{
+    background-image: url(../assets/1920x10801.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.bg h1, .bg p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 70px;
+}
+.bg p{
+    font-size: 25px;
+}
+.arrow_left, .arrow_right{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.arrow_left{
+    left: 15px;
+    opacity: 0.5;
+}
+.arrow_right{
+    right: 15px;
+    opacity: 0.5;
+}
+.arrow_left:hover, .arrow_right:hover{
+    opacity: 1;
+}
+.learn_more{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button{
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 5px;
+    width: 200px;
+    height: 30px;
+    background-color: #202024;
+    border-radius: 5px;
+    line-height: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.div_about_us, .div_our_wines{
+    width: 100%;
+    margin: 50px 0 50px;
+    display: flex;
+    justify-content: center;
+}
+.about_us{
+    font-weight: 700;
+    padding: 10px 100px 10px 0;
+
+}
+.about_us h1, .our_wines_text h1, .div_news h1{
+    margin-bottom: 40px;
+}
+.about_us a, .our_wines_button, .discover{
+    color: #000;
+    border: 3px solid;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    padding: 10px 20px;
+}
+.about_us a:hover{
+    background-color: #202024;
+    animation: hover 0.3s;
+}
+.about_us_text p, .our_wines_text p{
+    color: #666;
+    font-size: 15px;
+}
+.our_wines_text p{
+    margin-bottom: 50px;
+}
+.about_us_text{
+    max-width: 700px;
+    height: 200px; 
+}
+.div_our_wines{
+    width: 100%;
+}
+.our_wines_text{
+    width: 450px;
+    margin-left: 30px;
+}
+.our_wines_button{
+    margin: 0 10px;
+}
+.our_wines_button:hover, .discover:hover{
+    background-color: #202024;
+    animation: hover 0.3s;
+}
+.bg2{
+    width: 100%;
+    height: 450px;
+    background-image: url(../assets/regions3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg2 p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 30px 0;
+}
+.bg2 h1{
+    font-size: 90px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+.bg2 a{
+    color: #fff;
+}
+
+.div_images{
+    max-width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news_events{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.div_img1, .div_img2, .div_img3, .div_img4 {
+    position: relative;
+    width: 220px;
+    cursor: pointer;
+    margin: 10px;
+}
+.div_img2{
+    height: 170px;
+}
+.image_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.712);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image_overlay:hover{
+    opacity: 1;
+}
+.image_description{
+    font-size: 17px;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+}
+.img{
+    display: block;
+    width: 100%;
+}
+.winery__visit_us{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.winery, .visit_us{
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    margin-top: 50px;
+}
+.winery:hover, .visit_us:hover{
+    filter: none;
+}
+.winery{
+    background-image: url(../assets/winery1.jpg) ;
+}
+.visit_us{
+    background-image: url(../assets/visit_us.jpg);
+}
+.winery h1, .visit_us h1{
+    color: #fff;
+}
+.winery a, .visit_us a{
+background: #0a0a0ab6;
+color: #ffffff;
+margin-top: 30px;
+padding: 15px 30px;
+border-radius: 5px;
+}
+.bg3{
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background-image: url(https://armeniawine.am/wp-content/themes/Total-child/images/footer-bg.png);
+    background-size: cover;
+    background-position: 0px -220px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer_left, .footer_center, .footer_right{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_left h4, .footer_center h4, .footer_right h4{
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+}
+.footer_a{
+    color: #999999;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.footer_a:hover{
+    color: #fff;
+}
+.a_logo1, .a_logo2, .a_logo3{
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+    background-color: #000  ;
+}
+.a_logo1:hover{
+    background-color: #505c75;;
+}
+.a_logo2:hover{
+    background-color: #b15235;;
+}
+.a_logo3:hover{
+    background-color: #f5ab95;
+}
+.discover_armenia_wine{
+    width: 100%;
+    border-top: 1px #fff dashed;
+    margin-top: 30px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.discover_armenia_wine a{
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 0;
+    border: 2px #fff solid;
+    padding: 15px 35px;
+    border-radius: 5px;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data_p, .data_a{
+    color: #777;
+    font-size: 13px;
+    text-align: center;
+    margin:  10px ;
+}
+.data_a:hover{
+    color: #fff;
+}
