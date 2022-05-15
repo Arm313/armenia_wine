@@ -72,7 +72,7 @@ header{
     position: relative;
 }
 .bg h1, .bg p{
-    color: #fff;
+    color: red;
     font-weight: 700;
     font-size: 70px;
 }
